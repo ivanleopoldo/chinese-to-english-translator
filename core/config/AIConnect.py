@@ -16,7 +16,7 @@ class AIConnect:
         message = self.completions.create(
             model=self.model,
             messages=[
-                {"role": "system", "content": "You are a Chinese to English translator. After translating the text, you have to correct the grammatical errors of the translated text."},
+                {"role": "system", "content": "You are a Chinese to English translator. After translating the text, you have to correct the grammatical errors of the translated text. Also keep consistency with the names of people, places, and any other words"},
                 {"role": "user", "content": to_translate}
             ],
         )
