@@ -1,8 +1,8 @@
 <center>
 
-  # Chinese to English Translator
+  # Chinese Webnovel Raws Translator and EBook Builder 
 
-  A simple Chinese to English translator built with Python and powered by ChatGPT.
+  A simple Chinese to English translator with an inbuilt scraper and built with Python and powered by ChatGPT.
 
 </center>
 
@@ -33,4 +33,4 @@ python Translator.py
 
 ## To Do:
 - [ ] Basic Features
-- [ ] Create CLI
+- [ ] Webcrawling capabilities

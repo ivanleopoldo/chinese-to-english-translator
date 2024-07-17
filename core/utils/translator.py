@@ -2,7 +2,7 @@ from dotenv import load_dotenv; load_dotenv()
 import os
 import openai as api
 
-class AIConnect:
+class Translator:
     def __init__(self):
         self.api = api
         self.api.api_key = os.getenv("OPENAI_API_KEY")
@@ -16,7 +16,7 @@ class AIConnect:
         message = self.completions.create(
             model=self.model,
             messages=[
-                {"role": "system", "content": "You are a Chinese to English translator. After translating the text, you have to correct the grammatical errors of the translated text. Also keep consistency with the names of people, places, and any other words"},
+                {"role": "system", "content": "You are a Chinese to English translator. After translating the text, you have to correct the grammatical errors of the translated text. Also be consistent with the names of the people and places in the text as well as some of the terms used in the text. You can use the internet to help you with the translation. Just show the final product, nothing else."},
                 {"role": "user", "content": to_translate}
             ],
         )

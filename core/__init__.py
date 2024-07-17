@@ -1,2 +1,4 @@
-from .config.AIConnect import AIConnect
-from .handlers.FileHandler import FileHandler
+from .config import *
+from .utils.scraper import Scraper
+from .utils.translator import Translator
+from .utils.bookbinder import Bookbinder
