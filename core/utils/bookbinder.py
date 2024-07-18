@@ -122,7 +122,7 @@ class Bookbinder:
         self.book.toc = tuple(self.toc)
         self.book.spine = [intro_page, "nav"] + self.chapterList
 
-        epub_path = f"{constants.results_dir}\\{title}\\{title}.epub"
+        epub_path = f"{title}.epub"
         epub.write_epub(epub_path, self.book)
 
         return epub_path
